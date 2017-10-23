@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>StrongnameKey.snk</AssemblyOriginatorKeyFile>
+    <RootNamespace>MigraDoc.Rendering</RootNamespace>
+    <AssemblyName>MigraDoc.Rendering</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;NETSTANDARD2_0;PORTABLE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Rendering.Forms\**" />
+    <Compile Remove="Rendering.Printing\**" />
+    <Compile Remove="Rendering.Windows\**" />
+    <EmbeddedResource Remove="Rendering.Forms\**" />
+    <EmbeddedResource Remove="Rendering.Printing\**" />
+    <EmbeddedResource Remove="Rendering.Windows\**" />
+    <None Remove="Rendering.Forms\**" />
+    <None Remove="Rendering.Printing\**" />
+    <None Remove="Rendering.Windows\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\PDFsharp\src\PdfSharp.Charting\PdfSharp.Charting-netstandard.csproj" />
+    <ProjectReference Include="..\..\..\PDFsharp\src\PdfSharp\PdfSharp-netstandard.csproj" />
+    <ProjectReference Include="..\MigraDoc.DocumentObjectModel\MigraDoc.DocumentObjectModel-netstandard.csproj" />
+  </ItemGroup>
+
+</Project>

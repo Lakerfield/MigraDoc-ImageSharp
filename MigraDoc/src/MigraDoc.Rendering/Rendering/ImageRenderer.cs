@@ -349,6 +349,9 @@ namespace MigraDoc.Rendering
                     XImage image = XImage.FromStream(stream);
                     return image;
                 }
+#elif PORTABLE
+                XImage image = XImage.FromStream(() => new MemoryStream(bytes));
+                return image;
 #else
                 using (Stream stream = new MemoryStream(bytes))
                 {
@@ -356,8 +359,8 @@ namespace MigraDoc.Rendering
                     return image;
                 }
 #endif
-            }
-            return XImage.FromFile(uri);
+      }
+      return XImage.FromFile(uri);
         }
 
         readonly Image _image;
