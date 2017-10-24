@@ -333,6 +333,14 @@ namespace MigraDoc.DocumentObjectModel
         }
 
         /// <summary>
+        /// Adds a new barcode object
+        /// </summary>
+        public Barcode AddBarcode()
+        {
+            return Elements.AddBarcode();
+        }
+
+        /// <summary>
         /// Adds a new Bookmark
         /// </summary>
         public void Add(BookmarkField bookmark)
@@ -434,6 +442,14 @@ namespace MigraDoc.DocumentObjectModel
         public void Add(Image image)
         {
             Elements.Add(image);
+        }
+
+        /// <summary>
+        /// Adds a new barcode
+        /// </summary>
+        public void Add(Barcode barcode)
+        {
+            Elements.Add(barcode);
         }
 
         /// <summary>

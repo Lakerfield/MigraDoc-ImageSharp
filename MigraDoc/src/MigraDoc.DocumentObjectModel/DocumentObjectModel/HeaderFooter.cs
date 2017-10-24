@@ -132,6 +132,14 @@ namespace MigraDoc.DocumentObjectModel
         }
 
         /// <summary>
+        /// Adds a new barcode to the header or footer.
+        /// </summary>
+        public Barcode AddBarcode()
+        {
+              return Elements.AddBarcode();
+        }
+
+        /// <summary>
         /// Adds a new textframe to the header or footer.
         /// </summary>
         public TextFrame AddTextFrame()
@@ -177,6 +185,14 @@ namespace MigraDoc.DocumentObjectModel
         public void Add(TextFrame textFrame)
         {
             Elements.Add(textFrame);
+        }
+
+        /// <summary>
+        /// Adds a new barcode to the header or footer.
+        /// </summary>
+        public void Add(Barcode barcode)
+        {
+            Elements.Add(barcode);
         }
         #endregion
 

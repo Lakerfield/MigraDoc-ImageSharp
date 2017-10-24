@@ -170,6 +170,14 @@ namespace MigraDoc.DocumentObjectModel
         }
 
         /// <summary>
+        /// Adds a new barcode to the section.
+        /// </summary>
+        public Barcode AddBarcode()
+        {
+          return Elements.AddBarcode();
+        }
+
+        /// <summary>
         /// Adds a new textframe to the section.
         /// </summary>
         public TextFrame AddTextFrame()
@@ -207,6 +215,14 @@ namespace MigraDoc.DocumentObjectModel
         public void Add(Image image)
         {
             Elements.Add(image);
+        }
+    
+        /// <summary>
+        /// Adds a new barcode to the section.
+        /// </summary>
+        public void Add(Barcode barcode)
+        {
+          Elements.Add(barcode);
         }
 
         /// <summary>
