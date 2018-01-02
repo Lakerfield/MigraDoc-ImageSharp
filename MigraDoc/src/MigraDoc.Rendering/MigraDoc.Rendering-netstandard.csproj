@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>StrongnameKey.snk</AssemblyOriginatorKeyFile>
-    <RootNamespace>MigraDoc.Rendering</RootNamespace>
+    <RootNamespace>MigraDoc</RootNamespace>
     <AssemblyName>MigraDoc.Rendering</AssemblyName>
   </PropertyGroup>
 

@@ -5,7 +5,7 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>StrongnameKey.snk</AssemblyOriginatorKeyFile>
     <AssemblyName>MigraDoc.DocumentObjectModel</AssemblyName>
-    <RootNamespace>MigraDoc.DocumentObjectModel</RootNamespace>
+    <RootNamespace>MigraDoc</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

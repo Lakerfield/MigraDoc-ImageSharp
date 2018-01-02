@@ -135,7 +135,7 @@ namespace MigraDoc.Rendering.Resources
                 if (_resourceManager == null)
                 {
 #if !NETFX_CORE
-                    _resourceManager = new ResourceManager("MigraDoc.Rendering.Resources.Messages", Assembly.GetExecutingAssembly());
+                    _resourceManager = new ResourceManager("MigraDoc.Rendering.Resources.Messages2", Assembly.GetExecutingAssembly());
 #else
                     _resourceManager = new ResourceManager("MigraDoc.Rendering.Resources.Messages", typeof(Messages2).GetTypeInfo().Assembly);
 #endif
